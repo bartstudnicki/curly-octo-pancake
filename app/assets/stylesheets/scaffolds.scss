@@ -20,15 +20,14 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #fff;
 
   &:visited {
-    color: #666;
+    color: #cddc39;
   }
 
   &:hover {
     color: #fff;
-    background-color: #000;
   }
 }
 

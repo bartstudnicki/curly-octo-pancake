@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Appname</title>
-    <%= csrf_meta_tags %>
+	<head>
+		<title>Appname</title>
+		<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
 
-  <body>
-    <%= yield %>
-  </body>
+	<body class="w3-container w3-responsive w3-green">
+		<div  class="w3-bar w3-responsive w3-border-bottom">
+			<div class="w3-bar-item w3-button w3-hover-green w3-text-white w3-right"><a class="w3-text-white w3-hover-text-light-green" href='/microposts'>Microposts</a></div>
+			<div class="w3-bar-item w3-button w3-hover-green w3-text-white w3-right"><a class="w3-text-white w3-hover-text-light-green" href='/users'>Users</a></div>
+			<div class="w3-bar-item w3-button w3-hover-green w3-text-white w3-right"><a class="w3-text-white w3-hover-text-light-green" href='/my_pages/help'>Help</a></div>
+			<div class="w3-bar-item w3-button w3-hover-green w3-text-white w3-right"><a class="w3-text-white w3-hover-text-light-green" href='/my_pages/about'>About</a></div>
+			<div class="w3-bar-item w3-button w3-hover-green w3-text-white w3-right"><a class="w3-text-white w3-hover-text-light-green" href='/my_pages/home'>Home</a></div>
+		</div>
+		<div class="w3-animate-opacity">
+			<%= yield  %>
+		</div>
+	</body>
 </html>
